@@ -42,7 +42,7 @@ const LineChart = () => {
       },
       title: {
         display: true,
-        text: "Average High & Low Temperature",
+        text: "Average High & Low Subcription",
       },
     },
     scales: {
@@ -52,7 +52,7 @@ const LineChart = () => {
         max: 40, // Cài đặt giá trị max cho trục Y
         title: {
           display: true,
-          text: "Temperature",
+          text: "Subcription",
         },
       },
       x: {

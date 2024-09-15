@@ -10,10 +10,10 @@ const ColumnChart = () => {
 
   useEffect(() => {
     const data = {
-      labels: ["A", "B", "C", "D", "E", "F", "G", "H"],
+      labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
       datasets: [
         {
-          label: "Values",
+          label: "Tỷ",
           data: [20, 40, 60, 80, 50, 30, 90, 70],
           backgroundColor: [
             "#8884d8",
