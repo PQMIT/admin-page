@@ -30,7 +30,7 @@ function App() {
           <Route path="/dashboard/*" element={<Dashboard />} />
           <Route path="/posts-management" element={<PostsManagement />} />
           <Route path="/settings" element={<Settings />} />
-          <Route path="*" element={<NotFound />} /> Route cho NotFound
+          {/* <Route path="*" element={<NotFound />} /> Route cho NotFound */}
         </Routes>
       </div>
     </div>
