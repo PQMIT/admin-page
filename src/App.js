@@ -5,8 +5,8 @@ import PostsManagement from "./pages/PostsManagement";
 import Settings from "./pages/Settings";
 import "./App.css";
 import "antd/dist/reset.css";
-import ColumnChart from "./components/Dashboard/ColumnChart"; // Thêm component Subscription
-import LineChart from "./components/Dashboard/LineChart"; // Thêm component Revenue
+import NotFound from "./components/NotFound";
+
 function App() {
   return (
     <div className="admin-container">
@@ -26,11 +26,11 @@ function App() {
 
       <div className="content">
         <Routes>
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/dashboard/*" element={<Dashboard />} />
           <Route path="/posts-management" element={<PostsManagement />} />
           <Route path="/settings" element={<Settings />} />
-          {/* <Route path="/dashboard/subscription" element={<LineChart />} /> Thêm route cho Subscription */}
-          {/* <Route path="/dashboard/revenue" element={<ColumnChart />} /> Thêm route cho Revenue */}
+          <Route path="*" element={<NotFound />} /> Route cho NotFound
         </Routes>
       </div>
     </div>
